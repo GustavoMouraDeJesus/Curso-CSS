@@ -1,0 +1,167 @@
+body {
+
+    background-color: #1C1C1C;
+
+}
+
+h1 {
+
+    color: #A9A9A9;
+    background-color: #333333;
+    margin: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.botoes {
+
+    background-color: #B22222;
+    margin-left: 44%;
+    padding: 30px;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+
+}
+
+.botoes:hover {
+
+    background-color: #1C1C1C;
+
+}
+
+h2 {
+
+    text-decoration: underline;
+    color: red ;
+    margin: 20px 40px;
+    font-size: 30px;
+
+}
+
+p {
+
+    font-size: 20px;
+    color: white;
+    margin: 20px 40px;
+    margin-bottom: 30px;
+    text-align: justify;
+
+}
+
+a.botao1 {
+
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 4px solid greenyellow;
+    border-radius: 5px;
+
+}
+
+a.botao1:hover {
+
+    background-color: greenyellow;
+    padding: 12px;
+    border: 4px solid rgb(107, 161, 26);
+
+}
+
+a.botao2 {
+
+    text-decoration: none;
+    padding: 10px;
+    border: 5px double blue;
+    color: blue;
+
+}
+
+a.botao2:hover {
+
+    text-decoration: underline;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+
+}
+
+a.botao3 {
+
+    color: black;
+    text-decoration: none;
+
+}
+
+a.botao3:hover {
+
+    border-bottom: 5px solid red;
+
+}
+
+a.botao4 {
+
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+
+}
+
+a.botao4:hover {
+
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+a.botao5 {
+
+    cursor: text;
+
+}
+
+footer {
+    background-color: #A9A9A9;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+    <h1>O que é CSS?</h1>
+    <h2>Rumo ao primeiro emprego!</h2>
+
+    <p>
+
+        O <abbr title="Folha de estilo em cascata"><mark><b>CSS</b></mark></abbr> é o que define um estilo, as cores e
+        as fontes do nosso site, no geral, o
+        <mark><b>CSS</b></mark> será responsável por toda parte da estética da nossa página web. Aprender
+        <mark><b>CSS</b></mark> se torna fundamental para desenvolvermos um site bonito com design chamativo e criarmos
+        sites
+        maravilhosos.
+
+        <br><br>
+
+        A sigla <mark><b>CSS</b></mark> (Cascading Style Sheets) que em português significa (Folha de estilo em
+        cascata).
+
+        <br><br>
+
+        O <mark><b>CSS</b></mark> foi desenvolvido no ano de 1996, pelo <mark><b>W3C</b></mark> (World Wide Web
+        Consortium) com um único propósito. O <mark><b>HTML</b></mark> não foi criado para ter tags que ajudassem a
+        formatar a página, ou seja, deixá-la visualmente bonita.
+
+        <br><br>
+
+        Podemos dizer que o <mark><b>CSS</b></mark> é na verdade um complemento para o <mark><b>HTML</b></mark>, embora
+        na prática, seja considerada uma outra linguagem de marcação.
+
+        <br><br>
+
+        O <mark><b>CSS</b></mark>, assim como o <mark><b>HTML</b></mark>, ele funciona através de arquivos, no caso,
+        <mark><b>.CSS</b></mark>.
+
+        <br>
+
+        Por exemplo, imagine que tenhamos criado um arquivo <mark><b>.HTML</b></mark> e, nesse arquivo criamos uma tag
+        de parágrafo, ou seja, a tag <mark><b>&lt;p&gt;Conteúdo&lt;/p&gt;</b></mark>, no arquivo
+        <mark><b>.CSS</b></mark> vamos nos referir ao parágrafo que queremos editar, que no caso seria o
+        <mark><b>p</b></mark>, bastar irmos no nosso código <mark><b>.CSS</b></mark> e adicionarmos a seguinte tag:
+        <i>p</i>{color:red}. Mais para frente do curso vamos ver este exemplo na pratica, por hora, vamos utilizar a
+        imagens a seguir para auxiliar no entendimento.
+
+        <br><br>
+
+        <img src="img-css/corparagrafo.jpg" alt="Cor do parágrafo no CSS" width="50%">
+
+        <br><br>
+
+        É importante conhecermos bem as propriedades do <mark><b>CSS</b></mark> e como cada uma funciona, para termos a
+        capacidade de estilizar o nosso código <mark><b>HTML</b></mark> da maneira como desejarmos.
+
+        <br><br>
+
+        Vamos aprender a primeira maneira de colocarmos <mark><b>CSS</b></mark> nos nossos documentos, que é o
+        <mark><b>CSS em linha</b></mark>, que é quando a gente coloca o <mark><b>CSS</b></mark> dentro do próprio
+        elemento <mark><b>HTML</b></mark> que estamos trabalhando. Quando a gente trabalha com CSS em linha, sempre
+        faremos a seguinte forma, vamos selecionar a tag que queremos trabalhar, que no caso será a tag
+        <mark><b>body</b></mark> que é responsável por todo o corpo do nosso site, vamos colocar o seguinte atributo:
+        <mark><b>&lt;body <i>style</i>=""&gt;</b></mark> e dentro das aspas dupla iremos vamos passar as propriedades
+        css e o tipo de
+        comportamento que ela tenha. Quando colocarmos o <mark><b><i>style</i></b></mark> dentro de uma tag html,
+        estamos determinando que
+        esse estilo css só irá funcionar para aquela tag, que no caso é a <mark><b>body</b></mark>.
+
+        <br>
+
+        Essa propriedade <mark><b><i>style</i></b></mark> dentro da nossa tag <mark><b>&lt;body&gt;</b></mark> serve
+        para, por exemplo, se quiséssemos alterar a
+        cor do fundo do nosso site, colocarmos dentro das aspas duplas a propriedade <u>background:</u> e escrevermos a
+        cor que queremos, por exemplo:
+
+        <br><br>
+
+        <img src="img-css/corsite.jpg" alt="propriedade para mudar a cor do site" width="50%">
+
+        <br>
+
+        (Obs.: Caso você adicione alguma imagem com o fundo branco e queira mudar a cor do seu site, e possível remover
+        o
+        fundo da imagem, acesse o <a href="https://www.remove.bg/pt-br" target="_blank">removebg</a> e faça o upload
+        para remover o fundo da imagem que desejar e, poder alterar o fundo do seu site para a cor que desejar.)
+
+        <br><br>
+
+        Outro exemplo seria com a tag de titulo do <mark><b>HTML</b></mark>, que seria a &lt;h1&gt;&lt;/h1&gt;, nos
+        poderíamos adicionar uma propriedade <mark><b>CSS</b></mark> diretamente aqui nessa minha tag, ficaria da
+        seguinte forma:
+
+        <br>
+
+        <img src="img-css/cortitulo.jpg" alt="cor do titulo da minha pagina" width="50%">
+
+        <br><br>
+
+        Caso quiséssemos alterar a fonte do nosso titulo sera necessária outra propriedade <mark><b>CSS</b></mark>, esse
+        atributo seria:
+
+        <br>
+
+        <img src="img-css/tamanhotitulo.jpg" alt="tamanho da fonte do meu titulo" width="50%">
+
+        <br><br>
+
+        Basicamente é assim que funciona o <mark><b>CSS em linha</b></mark>, isso quer dizer que vamos adicionar os
+        atributos <mark><b>CSS</b></mark> diretamente nos componentes que queremos que sejam alterados. Porem, nem
+        sempre ele se torna o modo mais fácil de realizarmos a estilização da nossa página pelo fato de que o atributo
+        que colocamos iram funcionar somente na tag que selecionamos, ou seja, teríamos que adicionar atributos
+        <mark><b>CSS</b></mark> em varias e varias tags separadamente.
+
+        <br><br>
+
+    <h3>Conclusão</h3>
+
+    O CSS é uma ferramenta essencial para qualquer desenvolvedor web, pois permite transformar um site simples em uma
+    página visualmente atraente e profissional. Ele trabalha em conjunto com o HTML para definir estilos, cores, fontes
+    e layouts, proporcionando uma experiência mais agradável para os usuários.
+
+    Ao longo deste aprendizado, vimos que o CSS pode ser aplicado de diferentes formas, como em linha, diretamente
+    dentro das tags HTML. No entanto, essa abordagem pode ser limitada e pouco eficiente em projetos maiores. Por isso,
+    é importante conhecer outras maneiras de utilizar o CSS, como em arquivos externos, para garantir um código mais
+    organizado e fácil de manter.
+
+    Com a prática e o domínio das propriedades do CSS, será possível criar designs incríveis e personalizados, tornando
+    os sites mais dinâmicos e visualmente impactantes.
+
+    <hr>
+
+    </p>
+
+    <p>
+
+    <h1 style="color: black; font-size: 50px;">CSS incorporado</h1>
+
+    O <mark><b>CSS incorporado</b></mark> interno é quando damos instruções de <mark><b>CSS</b></mark> dentro da nossa
+    página <mark><b>HTML</b></mark> a qual queremos que as instruções sejam seguidas, vamos aprender como isso funciona
+    na pratica. Para começarmos a utilizar o <mark><b>CSS incorporado</b></mark> vamos ter que subir la em cima no nosso
+    código e, antes da tag de fechado do <strong>HEAD</strong> vamos adicionar a tag <mark><b>HTML</b></mark> chamada
+    <mark><b>style</b></mark>, da seguinte forma:
+
+    <br><br>
+
+    <img src="img-css/tagstyle.jpg" alt="tag html de style" width="50%">
+
+    <br><br>
+
+    Dentro dessa tag, tudo que passarmos dentro dessa tag, tudo que passarmos serão propriedades <mark><b>CSS</b></mark>
+    que serão aplicadas nesse documento, ou seja, na pagina index.html. Por exemplo, ao invés de utilizarmos o
+    <mark><b>CSS em linha</b></mark>, que foi o que utilizamos para estilizar o fundo e o titulo do nosso site, não foi
+    totalmente eficaz pelo fato de não atribuir os componentes no subtitulo da nossa pagina, veja a imagem a seguir:
+
+    <br><br>
+
+    <img src="img-css/titulooff.jpg" alt="subtitulo sem propriedades css" width="50%">
+
+    <br>
+
+    Nesta imagens, existem 2 tags <mark><b>HTMl</b></mark> com atribuições css, que seriam a tag body e a tag h1, porem
+    a nossa tag h2 não recebeu nenhum tipo de atribuições pelo fato de termos que adicionar em cada tag manualmente.
+
+    Para corrigir isto, excluiremos os atributos css das nossas tags, e ao invés de colocarmos direto na tag podemos
+    passar na tag style qual é o selection que significa seletor, ou seja, qual o elemento da página que queremos que
+    receba essas propriedades css. Aprendemos um pouco sobre selection no curso de HTML, e está na minha outra página...
+
+    <a href="https://gustavomouradejesus.github.io/curso-html/" target="_blank">Curso HTML</a>.
+
+    <br><br>
+
+    Para selecionarmos a tag que desejamos modificar, bastar colocar o nome da tag dentro da tag style, e sempre
+    lembrarmos de abri e fecharmos {} para conseguir colocar dentro das chaves os valores das propriedades que queremos
+    que sejam aplicadas.
+
+    <br><br>
+
+    Para começarmos a modificar nosso site, vamos selecionar a tag body e abrir chaves {}, e dentro delas vamos
+    especificar como gostaríamos que essas tags se comportassem. Isso funcionaria para todas as tags, sejam elas h1, h2
+    e etc. Quando adicionarmos a tag <mark><b>h1</b></mark> dentro da nossa tag html <mark><b>style</b></mark>
+    independente de quantos <mark><b>h1</b></mark> tiver em nosso código, todos iram receber a mesma modificação
+    automaticamente. Existem uma hierarquia de prioridades no códigos, ou seja, caso tenhamos, por exemplo, 6 tags
+    <mark><b>h1</b></mark> e queremos que apenas 1 seja diferente das demais, bastar realizarmos a utilização do
+    <mark><b>CSS em linha</b></mark> para modificarmos aquele <mark><b>h1</b></mark> especifico, pois o css que estiver
+    na tag diretamente ele vai pegar o valor do css que esta na tag por ordem de prioridade. Porem, nessa situação,
+    seria mais recomendado utilizarmos as div com classes, que aprendemos a como utilizar no curso passado...
+
+    <br>
+
+    <a href="https://gustavomouradejesus.github.io/curso-html/" target="_blank">Div com classes!</a>
+
+    <br><br>
+
+    <mark><b>CSS incorporado</b></mark>:
+
+    <br>
+
+    <img src="img-css/cssincorporado.jpg" alt="css incorporado no head" width="50%">
+
+    <br><br>
+
+    <mark><b>CSS em linha</b></mark>:
+
+    <br>
+
+    <img src="img-css/csslinha.jpg" alt="css em linha no h1" width="50%">
+
+    <br>
+
+    Agora vamos imaginar uma situação, supontando que gostaríamos que todas as páginas do nosso site tivessem a mesma
+    cor de fundo, para explicar isso, vamos criar uma página...
+
+    <br><br>
+
+    <a href="outra.html" target="_blank">Como adicionar a mesma cor de fundo para todas as páginas do nosso projeto?</a>
+
+    </p>
+
+    <br>
+
+    <h3>Conclusão</h3>
+
+    <p>
+
+        O CSS é uma peça fundamental no desenvolvimento web, proporcionando estilos e personalização às páginas. Ele
+        pode ser aplicado de diversas formas, como em linha, incorporado ou em arquivos externos, sendo esta última a
+        opção mais recomendada para projetos maiores devido à sua organização e eficiência. Ao dominar o CSS,
+        conseguimos criar sites mais modernos, responsivos e visualmente atrativos. Com a prática, será possível
+        desenvolver layouts sofisticados e aprimorar a experiência do usuário, tornando-se um diferencial para quem
+        busca se destacar no mercado de trabalho e conquistar o primeiro emprego na área de tecnologia.
+
+        <hr><br>
+
+    </p>
+
+    <h1>Seletores</h1>
+
+    <p>
+
+        Para essa nossa aula, iremos criar uma nova página web.
+
+        <br><br>
+
+        <a href="seletores.html" target="_blank">Ir para aula sobre seletores!</a>
+
+    </p>
+
+    <hr><br><br>
+
+    <h1>Propriedades</h1>
+
+    Nessa parte, vamos conhecer cada propriedade <mark><b>CSS</b></mark> e pra que cada uma delas servem, para melhorar
+    nosso aprendizado, iremos criar outra página para começarmos do zero e entendermos bem o funcionamento das
+    propriedades.
+
+    <br><br>
+
+    <a href="propriedades.html" target="_blank">Aula sobre propriedades.</a>
+
+    <hr>
+
+    <h1>Estilização de links</h1>
+
+    <p>
+
+        Agora vamos aprender mais sobre a estilização dos links em nossas páginas web.
+
+    </p>
+
+    <a href="estilizandolinks.html" target="_blank">Estilizando links</a>
+
+    <hr>
+
+    <h1>Propriedade Display</h1>
+
+    <a href="display.html" target="_blank">Saiba mais sobre a Propriedade Display!</a>
+
+    <br><br>
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outra página</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .CSSemlinha {
+            float: left;
+            width: 33%;
+            padding: 25px;
+            background-color: gray;
+            font-size: 120%;
+        }
+
+        .CSSinterno {
+            float: left;
+            width: 33%;
+            padding: 25px;
+            background-color: gray;
+            font-size: 120%;
+        }
+
+        .CSSexterno {
+            float: left;
+            width: 33%;
+            padding: 25px;
+            background-color: gray;
+            font-size: 120%;
+        }
+
+        .vantagens {
+            float: left;
+            width: 33%;
+            padding: 25px;
+            font-size: 120%;
+            background-color: aqua;
+            text-decoration-line: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Externo</h1>
+
+    <p>
+
+        A 3ª forma de trabalharmos com o <mark><b>CSS</b></mark> é o <mark><b>CSS Externo</b></mark>.
+
+        <br>
+
+        O <mark><b>CSS Externo</b></mark> é a maneira que a maioria dos site trabalham e seria a maneira mais "correta"
+        de se utilizar o <mark><b>CSS</b></mark>, por mais que o <mark><b>CSS em linha</b></mark> ou <mark><b>CSS
+                interno</b></mark> funcionem bem, nem sempre se tornam a forma mais produtiva de se trabalhar com o
+        <mark><b>CSS</b></mark>. Vamos aprender como a como criar um arquivo <mark><b>CSS</b></mark> que irá conter as
+        propriedades da nossa página.
+
+        <br>
+
+        Veja a seguir o passo a passo:
+
+        <br>
+
+        Primeiro vamos precisar criar uma nova pasta dentro do nosso projeto, vamos nomear de <u>css</u>.
+
+        <br>
+
+        <img src="img-css/pastacss.jpg" alt="criando a pasta do arquivo css" width="50%">
+
+        <br><br>
+
+        Após isso, vamos criar um novo arquivo dentro dessa pagina chamado <u>estilo.css</u>.
+
+        <br>
+
+        <img src="img-css/arquivocss.jpg" alt="criando o arquivo css" width="50%">
+
+        <br><br>
+
+        Dentro desse arquivo, vamos adicionar as propriedades <mark><b>CSS</b></mark> que desejamos. Caso já tenha
+        adicionado suas propriedades desejadas no <mark><b>CSS incorporado</b></mark>, basta selecionarmos nossas
+        propriedades e darmos o seguinte comando: <mark><b>Ctrl+X</b></mark> e colocarmos dentro do arquivo
+        <mark><b>estilo.css</b></mark>.
+
+        <br>
+
+        <img src="img-css/propriedadescss.jpg" alt="propriedades do css" width="50%">
+
+        <br><br>
+
+        Agora nos precisamos realizar uma invocar o arquivo <mark><b>.CSS</b></mark> para que ele rode dentro da nossa
+        página principal, ou seja, dentro da <mark><b>index.html</b></mark>. Para isso, vamos precisar fazer a
+        utilização da seguinte tag dentro do head do nosso projeto principal:
+
+        <br>
+
+        <img src="img-css/tagcssexterno.jpg" alt="tag do css externo" width="50%">
+
+        <br><br>
+
+        Basicamente, podemos dizer que o arquivo <mark><b>.CSS</b></mark> funciona em cascata e são folha de estilo
+        porque nós não necessariamente precisamos ter só um tipo de folha de estilo, podemos ter varias folhar de estilo
+        de forma simultânea, por exemplo, nos poderíamos separar todas as coisas, ou seja, em uma folha de estilo
+        poderíamos colocar tudo que esteja relacionado com os seletores de títulos e chamar essa folha de
+        <b><u>titulo.css</u></b>, poderíamos fazer uma outra folhar para tamanhos de fonte e enfim, poderíamos ter
+        múltiplos arquivos <mark><b>CSS</b></mark> dentro do mesmo projeto. No geral sempre teremos 1 arquivo que será o
+        padrão que vamos poder dar vários nomes para o geral da página, ai podemos utilizar outros css complementares
+        para fazer outras mudanças no nosso arquivo html.
+
+        <br><br>
+
+        Vamos relembrar as hierarquia do css:
+
+        <br>
+
+    <section class="CSSemlinha">
+
+        <h2>CSS em linha.</h2>
+
+        <p>
+
+            A primeira prioridade css é a do css que estiver direto em uma tag, ou melhor dizendo, o CSS inline.
+
+            <br><br><br><br><br><br><br><br><br>
+
+        </p>
+
+    </section>
+
+    <div class="CSSinterno">
+
+        <h2>CSS interno</h2>
+
+        <p>
+
+            O CSS interno é a segunda prioridade da nossa hierarquia, caso nós realizarmos o uso de um CSS interno e um
+            CSS inline, a prioridade sempre será para o CSS inline. Resumindo, supondo que criássemos uma propriedade
+            CSS falando que todos os &lt;h1&gt; serão da cor verde e no total tenhamos 6 tags &lt;h1&gt; e queremos que
+            apenas 1 seja da cor vermelha, basta adicionar uma propriedade CSS inline, que a prioridade para aquela tag
+            será o CSS inline (CSS em linha=CSS direto na tag).
+
+        </p>
+
+    </div>
+
+    <section class="CSSexterno">
+
+        <h2>CSS externo</h2>
+
+        <p>
+
+            O CSS externo seria a ultima prioridade de toda a ordem de uso CSS, caso utilizassémos as 3 estilos de CSS,
+            o externo seria a ultima prioridade de todas.
+
+            <br><br><br><br><br><br><br><br>
+
+        </p>
+
+    </section>
+
+    </p>
+
+    <br><br>
+
+    <h1>Características dos estilos.</h1>
+
+    <p>
+
+        As características de cada estilo de CSS são:
+
+    </p>
+
+    <section class="vantagens">
+
+        <ul>
+            <li>CSS inline</li>
+        </ul>
+
+        <p>
+
+        <ol>
+
+            <li>Aplica estilo a um elemento HTML específico</li>
+
+            <br>
+
+            <li>É útil para testes rápidos, e-mails HTML e pequenas alterações</li>
+
+            <br>
+
+            <li>É menos flexível e eficiente que os estilos interno e externo
+            </li>
+
+        </ol>
+
+        </p>
+
+    </section>
+
+    <section class="vantagens">
+
+        <ul>
+            <li>CSS interno</li>
+        </ul>
+
+        <p>
+
+        <ol>
+
+            <li>Aplica estilo a uma única página</li>
+
+            <br>
+
+            <li>É mais flexível que o CSS inline
+            </li>
+
+            <br>
+
+            <li>É menos eficiente que o CSS externo
+            </li>
+
+            <br><br><br>
+
+        </ol>
+
+        </p>
+
+    </section>
+
+    <section class="vantagens">
+
+        <ul>
+            <li>CSS externo</li>
+        </ul>
+
+        <p>
+
+        <ol>
+
+            <li>Aplica estilo a várias páginas</li>
+
+            <br>
+
+            <li>É o mais flexível e eficiente dos três
+            </li>
+
+            <br>
+
+            <li>Permite reutilizar estilos em várias páginas
+            </li>
+
+            <br>
+
+            <li>Garante um código mais limpo, organizado e eficiente</li>
+
+        </ol>
+
+        </p>
+
+    </section>
+
+    <br><br>
+
+    <p>
+
+        <strong>Dica:</strong> Por mais que tenhamos aprendido a utilizar as 3 maneiras de CSS, é recomendado que
+        selecionamos apenas 1 modo para utilizar, a recomendação é que utilizamos sempre o CSS externo por conta de
+        todas suas vantagens vistas anteriormente, e também pelo fato de manter nossa página HTML mais "limpa" e
+        organizada!
+
+    </p>
+
+    <a href="index.html">Voltar para a principal!</a>
+
+    <h3>Conclusão</h3>
+
+    <p>
+
+        Em resumo, o CSS Externo é a melhor abordagem para estilizar páginas da web de forma organizada e eficiente. Ao separar o código CSS do HTML, garantimos maior flexibilidade, reutilização de estilos e manutenção simplificada. Embora existam outras formas de aplicar CSS, como em linha e incorporado, o uso de um arquivo externo permite criar projetos escaláveis e com um código mais limpo. Adotar essa prática desde o início ajudará a desenvolver páginas mais profissionais e preparadas para o mercado de trabalho.
+
+        <hr><br>
+
+    </p>
+
+
+</body>
+
+</html>

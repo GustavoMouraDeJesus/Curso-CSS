@@ -1,0 +1,44 @@
+* {
+
+    margin: 20px;
+
+}
+
+body {
+
+    background-color: #121212;
+
+}
+
+mark, b, strong {
+
+    margin: 0;
+
+}
+
+h1 {
+
+    color: #FFD700;
+    text-align: center;
+    font-size: 55px;
+    text-shadow: 2px 2px 5px red;
+    /* Sombra vermelha */
+
+}
+
+h2 {
+
+    color: #FFD700;
+    font-size: 35px;
+    text-shadow: 2px 2px 5px red;
+    /* Sombra vermelha */
+
+}
+
+p, ol {
+
+    font-size: 25px;
+    color: #E5E5E5;
+    text-align: justify;
+
+}

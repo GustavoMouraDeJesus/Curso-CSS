@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seletores</title>
+
+    <link rel="stylesheet" href="css/seletores.css">
+
+</head>
+
+<body>
+
+    <h1 class="center">Seletores</h1>
+
+    <p>
+
+        Vamos dizer que quiséssemos estilizar um componente específico do nosso site, supondo que esse componente seria
+        o nosso título 1, o primeiro seletor para realizar essa estilização, e o mais simples que é usado com base em
+        qual tag queremos trabalhar.
+
+        Por exemplo, vamos ir para nosso seletor que seria nosso arquivo CSS e vamos colocar a palavra body, para nos
+        referirmos á tag &lt;body&gt;, após isso iremos abrir e fechar chaves({}), e dentro das chaves iremos adicionar
+        as propriedades css qeu queremos adicionar à nossa página.
+
+        <br>
+
+        Por exemplo:
+
+        <br>
+
+        <img src="img-css/seletores1.jpg" width="50%">
+
+        <br><br>
+
+        Vimos na imagens acima que no body (corpo do nosso site), adicionamos dentro da chave a propriedade <i
+            style="color: blue;">background</i>. Essa tag é utilizada para selecionarmos a cor de fundo que queremos que
+        nosso site tenha.
+
+        <br><br>
+
+        Também adicionamos aos nossos títulos a propriedade <i style="color: blue;">color</i> (cor) e a propriedade <i
+            style="color: blue;">font-size</i> (tamanho da nossa fonte). Essas propriedades serão adicionadas á todas as
+        nossas tag &lt;h1&gt; dentro da nossa página <b><a href="seletores.html" target="_blank">seletores.html</a></b>
+
+        <br><br>
+
+        Já para nossos parágrafos adicionamos as mesmas 2 propriedades dos nossos títulos, porém alteramos somente os
+        valores delas, ou seja, para a cor adicionamos a <i style="color: purple;">#122E40</i> e para o tamanho da nossa
+        fonte selecionamos o tamanho de <i style="color: purple;">20px</i>.
+
+        <br><br>
+
+        Outra coisa que podemos fazer em nosso site também é pode ser feito da seguinte forma, dentro do nosso arquivo
+        CSS seletores e dentro dele podemos criar estilos através de classes, e então, adicionarmos essas classes aonde
+        gostaríamos que usassem aquelas propriedades, por exemplo, para deixar nosso título alinhado ao centro da tela
+        fizemos o seguinte:
+
+        <br><br>
+
+        Selecionaremos nossa página de CSS:
+
+        <br>
+
+        <img src="img-css/css.jpg" width="50%">
+
+        <br><br>
+
+        Após isso, criaremos a propriedade com os valores desejados:
+
+        <br>
+
+        <img src="img-css/estilo.jpg" width="50%">
+
+        <br><br>
+
+        Depois disso, vamos voltar para nosso arquivo que desejamos adicionar aquele estilo, (no caso, seletores.html).
+
+        <br>
+
+        <img src="img-css/voltar.jpg" width="50%">
+
+        <br><br>
+
+        Feito isso, vamos adicionar na tag que desejamos atribuir as propriedades a class com as propriedades queremos,
+        veja o exemplo a seguir:
+
+        <br>
+
+        <img src="img-css/class-center.jpg" width="50%">
+
+        <br><br>
+
+        Pronto, dessa forma criamos uma class com uma propriedade CSS que podemos adicionar em qualquer tag que
+        quiséssemos, ou seja, deixar propriedades CSS pré definidas.
+
+        <br><br>
+
+        Vamos dizer que apena um item em especifico tenha um certo comportamento, para isso nós utilizamos o seletor <i
+            style="color: purple;">id</i>, esse seletor serve para batizarmos um tag com algum nome único, imagine que
+        para o próximo parágrafo nos utilizaremos um <i style="color: purple;">id</i> de teste. para realizar isso, nos
+        vamos ir a nossa página de CSS e vamos adicionar a class <i style="color: green;">#teste</i> e dentro das chaves
+        vamos colocar as propriedades desejadas por nós.
+
+    </p>
+
+    <p id="teste">
+
+        Neste paragrafo nos adicionamos o atributo CSS <i style="color: blue;">text-align:</i><i
+            style="color: purple;">center</i> para alinha o texto desse parágrafo ao centro da nosso página, e depois
+        disso vamos adicionar o atributo <i style="color: blue;">background:</i> para selecionarmos a cor do fundo no
+        nosso parágrafo.
+
+    </p>
+
+    <br><br>
+
+    <p>
+
+        Resumindo, os prinicipais seletores que temos são esses:
+
+    </p>
+
+    <ol class="fontlist">
+
+        <li>
+
+            O seletor pelo nome da TAG, que vai aplicar aquelas propriedades para todas as tags através to nome da class
+
+        </li>
+
+        <li>
+
+            Temos também o seletor através do identificador, que vamos colocar um <i style="color: purple;">id</i> e
+            oque tiver aquela class do nosso <i style="color: purple;">id</i> no css receberá aquelas propriedades CSS.
+
+        </li>
+
+        <li>
+
+            E o terceiro que utilizamos para dar propriedade para todo nossa página nos utilizamos um coringa, que seria
+            o *{}, isso dentro da nossa tag css, isso vai dizer que todas as tags do nosso projeto receberam as
+            propriedades dentro desse coringa.
+
+        </li>
+
+    </ol>
+
+    <p>
+
+        (Obs:. É importante sabermos de alguns detalhes importantes, tais como, nunca começar o nome do identificar com
+        um número, por exemplo, poderíamos colocar o nome de um identificador com teste1, porém nunca 1teste. Outra
+        coisa é que o nome do identificador tem que ser único, ou seja, não podemos ter 2 identificadores com o nome
+        teste, para isso teríamos que utilizar as class, que já possuem essa função. )
+
+        <br><br>
+
+        Para agrupar alguns seletores em um só para economizarmos código, basta adicionarmos , e o nome da tag que
+        queremos usar aquele elemento
+
+    </p>
+
+    <a href="index.html" target="_blank">Voltar para a principal!</a>
+
+    <h3>
+
+        Conclusão
+
+    </h3>
+
+    <p>
+
+        Os seletores CSS são essenciais para a estilização de páginas web, permitindo aplicar estilos de forma eficiente
+        e organizada. Aprendemos que existem diferentes tipos de seletores, como:
+
+    </p>
+
+    <ol class="fontlist">
+
+        <li><b>Seletor de tag</b> – Aplica estilos a todas as ocorrências de uma determinada tag.</li>
+
+        <li><b>Seletor de classe</b> – Permite definir estilos reutilizáveis e aplicá-los a múltiplos elementos usando a
+            propriedade class.</li>
+
+        <li><b>Seletor de ID </b> – Específico para um único elemento, definido com a propriedade id.</li>
+
+        <li><b>Seletor universal (*{}) </b> – Aplica estilos a todos os elementos da página.</li>
+
+    </ol>
+
+    <p>
+
+        Além disso, vimos que é possível agrupar seletores para otimizar o código e evitar repetições desnecessárias.
+        Também
+        destacamos a importância das regras de nomenclatura, como evitar iniciar identificadores com números e garantir
+        que
+        cada id seja único.
+
+        Com esse conhecimento, podemos estruturar e personalizar nossos sites de maneira mais eficiente, garantindo um
+        design mais organizado e de fácil manutenção.
+
+    </p>
+
+    <hr><br><br>
+
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Links</title>
+    <link rel="stylesheet" href="css/estilizandolinks.css">
+
+</head>
+
+<body>
+
+    <h1>Estilização de links.</h1>
+
+    <hr>
+
+    <h2>Estilizando links.</h2>
+
+    <p>
+
+        Vamos aprender a fazer variações de botões com links, ou seja, fazer a estilização de links. A vantagem de ter
+        em mente essas variações é que podemos utilizar diferentes estilos para links dentro do nosso site. A seguir,
+        vamos duplicar vários links iguais para conseguirmos estilizar e explicar de forma bem objetiva a estilização.
+
+        <br>
+
+        Quando precisamos trabalhar com uma classe referente a link, podemos utilizar um seletor mais especifico que
+        seria: a."classe desejada". Dessa forma, especificamos que a propriedade <mark>CSS<b></b></mark> só vai
+        funcionar nesse caso, se for um link e tiver a class "botao1", por exemplo, caso usarmos a class "botao1" em um
+        parágrafo, oque for adicionado não será atribuído ao nosso parágrafo.
+
+        <hr>
+
+    <h2>Botão 1</h2>
+
+    <p>
+
+        Esse primeiro botão seria o mais básico de se fazer, que seria colocando um <mark><b>background</b></mark>, ou
+        seja, uma cor de fundo de preferencia do desenvolvedor, após isso, vamos selecionar a cor que queremos que sejam
+        nossas letras usando o <mark><b>color</b></mark>, vamos adicionar um <mark><b>padding</b></mark> de 10px,
+        eliminar todas as decorações do texto do link com a propriedade <mark><b>text-decoration: none</b></mark>,
+        colocar uma <mark><b>border</b></mark> verde de 4px sólida e arredondar nossa borda com a propriedade
+        border-radius. Além disso, vamos adicionar a mudança do nosso botão, oque acontece quando passamos o mouse em
+        cima do nosso botão.
+
+        <br><br>
+
+        Para isso vamos copiar o código <mark><b>CSS</b></mark> do nosso botão e atualizarmos as tags, background para
+        um verde um pouco mais claro, vamos aumentar nosso padding para 12px e vamos alterar a cor da nossa borda para
+        um verde um pouco mas escuro, o restante nos não precisando adicionar.
+
+        <br><br>
+
+        (Obs.: Todas as propriedades foram vistas e explicadas no na página anterior sobre propriedades <a
+            href="propriedades.html" target="_blank" style="color: red;">clique aqui para ver mais.</a>)
+
+        <br><br>
+
+        No nosso código <mark><b>CSS</b></mark> ficaria da seguinte forma:
+
+        <br><br>
+
+        <img src="img-css/codigo-botao.jpg" width="40%">
+
+        <br><br>
+
+        E o resultado é:
+
+        <br><br>
+
+        <a class="botao1" href="index.html" target="_blank">Voltar para a principal</a>
+
+    </p>
+    <hr>
+
+    <h2>Botão 2</h2>
+
+    <p>
+
+        Para nosso segundo botão iremos fazer de uma forma um pouco diferente, vamos criar uma classe no nosso código
+        <mark><b>CSS</b></mark> chamada botao2, sempre colocar "a." antes para especificarmos nossa classe diretamente
+        ao
+        links. De inicio, vamos eliminar as decorações do texto do nosso link com a propriedade text-decoration: none,
+        vamos
+        também fazer com que ele seja "invisível" com uma bordinha, para isso vamos colocar um padding de 10px com uma
+        borda
+        de 5px dupla da cor azul, mudar a cor do nosso link para azul assim como a bordar com a propriedade color e
+        vamos
+        dizer que quando o usuário passar o curso em cima ele ira se preencher, além disso, o texto do nosso link ficará
+        com
+        a decoração de sublinhado, diminuir o padding para 8, removemos a bordar e colocamos o background em azul com a
+        cor
+        do texto em branco.
+
+        <br><br>
+
+        No código <mark><b>CSS</b></mark> fica da seguinte maneira:
+
+        <br><br>
+
+        <img src="img-css/codigo-botao2.jpg" width="40%">
+
+        <br><br>
+
+        E o resultado seria:
+
+        <br><br>
+
+        <a class="botao2" href="index.html" target="_blank">Voltar para a principal</a>
+
+    </p>
+
+    <hr>
+
+    <h2>Botão 3</h2>
+
+    <p>
+
+        Para o Botão 3, vamos fazer de uma forma diferente, fazer um estilo de botão para menu ou um botão
+        superior, para isso fazer criar a class botao3 no nosso <mark><b>CSS</b></mark>, colocar a color dele sendo
+        preto, o text-decoration: none e fazer dizer que quando a pessoa passar o mouse em cima dele vai aparecer uma
+        bordar vermelha de 5px.
+
+        <br><br>
+
+        (Obs.: Esse tipo de botão é bastante utilizado nos rodapés das páginas webs e para os menus também.)
+
+        <br><br>
+
+        Código <mark><b>CSS</b></mark>:
+
+        <br><br>
+
+        <img src="img-css/codigo-botao3.jpg" width="40%">
+
+        <br><br>
+
+        Resultando em:
+
+        <br><br>
+
+        <a class="botao3" href="index.html" target="_blank">Voltar para a principal</a>
+
+    </p>
+    <hr>
+
+    <h2>Botão 4</h2>
+
+    <p>
+
+        No botão 4 vamos trabalhar mais a questão das fontes e o estilo delas, então no nosso botao4 poderíamos colocar
+        o text-decoration como none, a color dela azul, o font-size em 18px e quando passarmos o mouse em cima, podemos
+        fazer com que o tamanho da fonte aumente, para isso falaríamos que o font-size dele será de 22px e dizer que a
+        grossura de font será em negrito com a propriedade font-weight:bold.
+
+        <br><br>
+
+        <img src="img-css/codigo-botao4.jpg" width="40%">
+
+        <br><br>
+
+        Resultado:
+
+        <br><br>
+
+        <a class="botao4" href="index.html" target="_blank">Voltar para a principal</a>
+
+    </p>
+    <hr>
+
+    <h2>Botão 5</h2>
+
+    <p>
+
+        Para nosso ultimo botão vamos ver a questão de mudança de cursor, quando colocarmos o mouse em cima de qualquer
+        link ele vai ficar com esse efeito de cursor. Vamos criar nossa class botao5 no <mark><b>CSS</b></mark> e passar
+        a propriedade chamada cursor e teremos varios estilos de cursos para usarmos, por exemplo, se utilizarmos o
+        none, assim como no caso do sublinhado no link, nosso cursor ira sumir. Vamos utilizar o cursor de texto, que
+        seria uma barra ao passarmos o curso em cima do link. Dessa forma podemos determinar qual será o comportamento
+        do nosso cursor ao passarmos ele em cima dos links.
+
+        <br><br>
+
+        No <mark><b>CSS</b></mark> ficará:
+
+        <br><br>
+
+        <img src="img-css/codigo-botao5.jpg" width="40%">
+
+        <br><br>
+
+        <a class="botao5" href="index.html" target="_blank">Voltar para a principal</a>
+
+    </p>
+
+    <br>
+
+    </p>
+
+    <h2>Conclusão</h2>
+
+    <p>
+
+        A estilização de links é uma ferramenta essencial para criar uma experiência mais agradável e intuitiva para os
+        usuários de um site. Como vimos, existem diversas maneiras de personalizar links, desde botões básicos até
+        efeitos mais avançados, como mudanças de cor, tamanho de fonte e até mesmo a aparência do cursor.
+
+        Ao utilizar seletores específicos, como <mark><b>a.classe</b></mark>, conseguimos aplicar estilos exclusivos
+        para os links sem afetar outros elementos da página. Além disso, as interações com o <mark><b>:hover</b></mark>
+        permitem tornar os botões mais dinâmicos, proporcionando feedback visual ao usuário.
+
+        Com criatividade e um bom uso do CSS, podemos transformar links simples em elementos estilizados e funcionais,
+        agregando valor ao design e à usabilidade do site. Agora, é só aplicar essas técnicas e explorar novas
+        possibilidades para personalizar ainda mais seus links!
+
+    </p>
+
+    <hr><br>
+
+    <p>
+        <a class="botoes" href="index.html" target="_blank">Voltar para a principal.</a>
+
+    </p><br>
+
+
+    <footer>
+        <div class="container">
+            <p>© 2025 - Todos os direitos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+
+    background: #d9cec5;
+
+}
+
+h1 {
+
+    color: #731d2c;
+    font-size: 50px;
+
+}
+
+p {
+
+    color: #122E40;
+    font-size: 20px;
+
+}
+
+.center{
+
+    text-align: center;
+
+}
+
+#teste{
+
+    text-align: center;
+    background-color: darkgreen;
+    color: black;
+
+}
+
+.fontlist{
+
+    color: #122E40;
+    font-size: 20px;
+
+}

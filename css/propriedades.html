@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="css/esilo-propriedades.css">
+
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <h1 class="titulo">Principais propriedades e suas funções.</h1>
+
+    </header>
+
+    <h2><u>Color</u></h2>
+
+    <p>
+
+        A primeira propriedade <mark><b>CSS</b></mark> que vamos ver será a propriedade <abbr
+            title="Cor"><strong>Color</strong></abbr>:
+
+        <br><br>
+
+        A propriedade <abbr title="Cor"><strong>Color</strong></abbr> é a cor do nosso texto, por exemplo, usando a div
+        header e a class titulo no nosso h1 e selecionando essa class na nossa página <mark><b>CSS</b></mark>, o texto
+        do nosso título ficou da cor laranja escuro. Veja a seguir o passo a passo:
+
+        <br><br>
+
+    </p>
+
+    <ol>
+
+        <li>Vamos adicionar a div <mark><b>header</b></mark>, e dentro dessa div vamos colocar as classes
+            <mark><b>topo</b></mark> e a <mark><b>titulo</b></mark> em nossa página <mark><b>HTML</b></mark>:
+        </li>
+
+        <img src="img-css/class-topo.jpg" width="50%">
+
+        <li>
+
+            Feito isso, basta adicionarmos a class titulo na nossa página css e colocarmos a propriedade color e
+            escolhermos a cor que gostaríamos:
+
+        </li>
+
+        <img src="img-css/cortitulop.jpg" height="190px">
+
+    </ol>
+
+    <h2><u>Background</u></h2>
+
+    <p>
+
+        A propriedade <mark><b>Background</b></mark> serve para não somente cores sólidas, mas também para imagens e
+        outros elementos, veja a seguir todos os <mark><b>Background</b></mark> existentes.
+
+    </p>
+
+    <ol>
+
+        <li style="background-color: #424048;">
+
+            <strong>Background-color</strong>: O background-color em <mark><b>CSS </b></mark> define a cor de fundo de
+            um determinado elemento, por exemplo, utilizando esse background-color eu irei alterar a cor de fundo desse
+            texto.
+
+        </li><br>
+
+        <img src="img-css/background-color.jpg">
+
+        <br><br>
+
+        <li>
+
+            <strong>Background-image</strong>: Para isso é necessários criarmos uma div com uma class, por exemplo, <i
+                style="color: green;">exemplo-back</i>, feito isso vamos na nossa página <mark><b>CSS</b></mark> e
+            adicionamos nossa class conforme aprendemos anteriormente, após isso, para termos nossa imagem de fundo,
+            basta utilizarmos o site <a href="https://www.pexels.com/pt-br/" target="_blank">Pexels</a> para
+            conseguirmos nossa imagem pesquisando por textura background e adicionarmos a nossa pasta de imagens, agora
+            dentro do nosso <mark><b>CSS</b></mark> escrevemos a propriedade background-image porém, além disso,
+            colocamos o seguinte parâmetro, (:url) para especificarmos o caminho da nossa imagem, no entanto, não é só
+            adicionarmos esse background, temos que ajustar o tamanho e posicionamento da nossa imagem. No geral o nosso
+            código ficaria assim:
+
+            <br><br>
+
+            No <mark><b>HTML</b></mark>:
+
+            <br>
+
+            <img src="img-css/background-image.jpg" width="50%">
+
+            <br><br>
+
+            No <mark><b>CSS</b></mark>
+
+            <br>
+
+            <img src="img-css/cssbackground-imge.jpg" width="50%">
+
+        </li><br>
+
+        Os demais background utilizados são:
+
+        <li><strong>Background-size</strong>: É utilizado para ajustar o tamanho da imagem de fundo que queremos que
+            apareça.</li>
+
+        <li><strong>Background-repeat</strong>: Serve para dizermos se queremos que nossa imagem se repita ou não e a
+            direção da repetição.</li>
+
+        <li><strong>Background-position</strong>: Para informarmos a posição da nossa imagem de fundo, se queremos que
+            ela fique ao topo, ou centro, a esquerda ou a direita.</li>
+
+        <p>
+
+            Exite um atalho para que não seja necessário ficar criando vários e vários backgrounds com vimos nas imagens
+            acima, para isso, vamos colocar apenas um background e (:), e após isso é so adicionarmos as propriedades
+            background que gostaríamos, por exemplo:
+
+            <br>
+
+            <img src="img-css/atalhobackground.jpg" width="50%">
+
+            <br><br>
+
+            Basicamente, quando querermos adicionar uma imagem com fundo utilizaremos mais da seguinte forma: colocando
+            um background-image primeiro e depois só utilizar o background-size: cover para a imagem se ajustar
+            automaticamente.
+
+        </p>
+
+        <p>
+
+        <div class="exemplo-back">
+
+
+
+        </div>
+
+        </p>
+
+        <br><br>
+
+    </ol>
+
+    <div class="borda">
+
+        <h2><u>Border</u></h2>
+
+        <p>
+
+            O <abbr title="Borda"><strong>Border</strong></abbr> é bastante utilizado para personalizar nosso código na
+            hora
+            de criarmos botões e estarmos tento a possibilidade de trabalharmos de forma mais estilizada. Dentro dessa
+            propriedade <mark><b>CSS</b></mark> chamada border podemos adicionar alguns atributos, tais como o tamanho
+            da
+            borda em pixel por exemplo 1px. Outro atributo que podemos especificar o estilo da bordar que vamos querer,
+            existem vários tipos de estilos de borda para utilizarmos, os principais são: <abb title="Sólida">
+                <b>solid</b>
+            </abb>, <abb title="Pontilhado"><b>dotted</b></abb>, <abb title="Traços"><b>dashed</b></abb>, <abb
+                title="borda dubla"><b>double</b></abb>, <abb title="Efeito 3D"><b>groove</b></abb>, <abb
+                title="Relevo tridimensional"><b>ridge</b></abb>, <abb title="Por dentro"><b>inset</b></abb>, <abb
+                title="Por fora"><b>outset</b></abb>, <abb title="Nenhuma"><b>none</b></abb>, <abb title="Oculta">
+                <b>hidden</b>
+            </abb>.
+
+            <br>
+
+            Além disso, existe a questão da onde queremos que essa borda apareça, quando colocamos só border e passamos
+            o
+            tamanho da borda o tipo e a cor, ela vai ficar em toda a area. Se especificarmos o lado que queremos ele vai
+            mostrar somente daquele lado, para isso vamos precisar somente colocar o lado que queremos que aquela borda
+            especifica fique, por exemplo: <b><abbr title="Borda de cima">border-top</abbr></b>, <b><abbr
+                    title="Borda da esquerda">border-left</abbr></b>, <b><abbr
+                    title="Borda da direita">border-right</abbr></b> e <b><abbr
+                    title="Borda de baixo">border-bottom</abbr></b>.
+
+            <br>
+
+            Além dessas bordar temos também a borda arredondada, para usarmos essa borda vamos adicionar a propriedade
+            border-radius e dentro dessa propriedade vamos adicionar os atributos de porcentagem ou de pixels para
+            escolhermos o tamanho do nosso efeito arredondado.
+
+            <br><br>
+
+            No código <mark><b>CSS</b></mark> ficará da seguinte forma:
+
+            <br>
+
+            <img src="img-css/borda.jpg" width="50%">
+
+        </p>
+
+    </div>
+
+    <h2><u>Margin</u></h2>
+
+    <p>
+
+        A propriedade <abbr title="margem"><b>margin</b></abbr> serve ára dar um espaço em branco em uma das direções do
+        elementos, por exemplo a margem que deixamos nas laterias do nosso site em todos os títulos e parágrafos, veja a
+        seguir como fizemos a utilização dela:
+
+        <br>
+
+        <img src="img-css/margem.jpg" width="50%">
+
+        <br><br>
+
+        Essa margem pode ser adicionada a qualquer direção da nossa página, margin-top para a margem no topo do nosso
+        site, margin para as laterais e marge-bottom para a margem na parte de baixo da página web, caso quiséssemos
+        adicionar a margem de um lado especifico e só colocar margin- e o lado que queremos nossa margem, left para
+        esquerda e right para direita. Caso seja de necessidade do usuário adicionar margens de diferentes valores,
+        existem um atalho para nao poluirmos tanto nosso código, é só colocarmos a propriedade margin e escrevermos os
+        valores de cada lado, começando pelo top, depois right, bottom e por fim, left, nessa respectiva ordem. Exemplo:
+        margin: 30px 70px 40px 25px; (30px para o topo, 70px para a direita, 40px para a parte de baixo e 25px para a
+        esquerda.)
+
+        <br><br>
+
+        Caso fosse necessário afastarmos nossos parágrafos, nos adicionaríamos a propriedade margin-bottom a nossa tag p
+        e colocaríamos o valor que queremos que afaste, por exemplo.
+
+        <br>
+
+        <img src="img-css/afastarparagrafo.jpg" width="50%">
+
+    </p>
+
+    <h2><u>Conclusão</u></h2>
+
+    <p>
+
+        Neste material, exploramos algumas das principais propriedades do CSS e suas funções essenciais na estilização
+        de páginas web. A propriedade <mark><b>color</b></mark> permite definir a cor do texto, enquanto
+        <mark><b>background</b></mark> possibilita a personalização do fundo com cores ou imagens. Já
+        <mark><b>border</b></mark> é fundamental para criar bordas estilizadas, dando um toque diferenciado aos
+        elementos, e <mark><b>margin</b></mark> auxilia no espaçamento externo dos componentes da página.
+
+        <br>
+
+        O domínio dessas propriedades é essencial para desenvolver layouts visualmente agradáveis e organizados. Ao
+        compreender e aplicar corretamente esses conceitos, você poderá criar designs mais personalizados e responsivos,
+        garantindo uma melhor experiência para os usuários.
+
+    </p>
+    <hr>
+
+    <h2><u>Padding</u></h2>
+
+    <p>
+
+        O <mark><b>padding</b></mark> é bem parecido com o <mark><b>margin</b></mark>, com a diferença que, o
+        <mark><b>padding</b></mark> ao invés de dar um espaçamento em branco, ele vai dar um preenchimento dentro do
+        nosso elemento. Para utilizar essa propriedade basta seguirmos as mesma regras da propriedade passada.
+
+        <br><br>
+
+        Essa propriedade <mark><b>padding</b></mark> é muito utilizada para estilizar botões de forma simples e rápida,
+        para isso, vamos criar uma classe, por exemplo botao dentro do link que leva para nossa página principal, feito
+        isso vamos adicionar uma margem ao nosso botão de 33%, personalizar a cor de fundo usando o background-color,
+        mudando a cor do link para branco através do color, preenchendo o fundo com o padding e arredondando as bordar
+        com o border-radius. Outra propriedade que vamos ver um pouco mais pra frente, porém, que já vamos introduzir
+        nesta parte do curso é para dar efeito ao passar o cursor do mouse em cima do botão, para isso e necessário
+        repedir a classe e colocarmos (:hover), hover significa sobre, ou seja, oque vai acontecer quando o mouse tiver
+        sobre. Dentro dessa propriedade vamos por exemplo, adicionar um background-color com uma cor diferente e pronto,
+        temos um botão rápido, simples e utilizável.
+
+        <br><br><br><br>
+
+        <a class="botao" href="index.html" target="_blank">Voltar para a principal</a>
+
+        <br><br><br><br>
+
+        Veja como ficou o código <mark><b>CSS</b></mark>...
+
+        <br><br>
+
+        <img src="img-css/botao.jpg" width="50%">
+
+    </p><br><br>
+
+    <h2><u>Width e Height</u></h2>
+
+    <div class="teste">
+
+        <p>Basicamente as propriedades <mark><b>width</b></mark> e <mark><b>height</b></mark> são a altura e largura dos
+            nossos elementos com por exemplo, as imagens. Além disso, temos também o <mark><b>max-width</b></mark>,
+            com
+            essa
+            propriedade vamos dizer qual a largura máxima do nosso elemento, e conforme o tamanho da nossa tela for
+            alterando,
+            nosso elemento irá se adaptando até chegar no valor máximo especificado, para isso, vamos adicionar uma div
+            neste parágrafo com a class teste, feito isso nos vamos adicionar as seguintes propriedades ao nosso
+            <mark><b>CSS</b></mark>: background-color, max-height e max-widht. Com essas propriedades, nossa div ira
+            ficar de certa forma, responsiva, sem a necessidade de java ou java sript. Veja a seguir como ficou o código
+            <mark><b>HTML</b></mark> e o código <mark><b>CSS</b></mark>.
+
+            <br><br>
+
+            <mark><b>HTML:</b></mark>
+
+            <br>
+
+            <img src="img-css/div-teste.jpg" width="50%">
+
+            <br><br>
+
+            <mark><b>CSS:</b></mark>
+
+            <br>
+
+            <img src="img-css/css-teste.jpg" width="50%">
+
+            <br><br>
+
+            Essa forma de se utilizar o max-width e max-height se tornam muito interessante quando há a necessidade de
+            trabalharmos com páginas adaptativas para determinados tamanhos de tela do usuário, porém existem formas
+            mais eficazes de realizarmos essas adaptações do nosso site que veremos mais pra frente.
+
+    </div>
+
+    </p>
+
+    <h2><u>Text</u></h2>
+
+    <p>
+
+        Existem varias propriedades relacionadas ao texto, tais como alinhamento, decoração, transformação,
+        espaçamentos, entre outros. Para identificarmos bem as diferenças entre todas as propriedades de texto vamos
+        criar uma div com a class teste-"nome da propriedade", exemplo: teste-textaling.
+
+    </p>
+
+    <ol>
+
+        <li><b>text-aling</b>: Essa propriedade possuí vários atributos, tais como, center, end, justify, left,
+            right,start, inherit, initial e unset.</li>
+
+
+    </ol>
+
+    <ol>
+
+        <div>
+
+            <li class="teste-textcenter">
+
+                <b>center</b>: Responsável por alinhar nosso texto ao centro da nossa página.
+
+            </li>
+            <hr>
+
+        </div>
+
+
+
+        <div>
+
+            <li class="teste-textright">
+
+                <b>end</b>: Alinha nosso texto a direita.
+
+            </li>
+            <hr>
+
+        </div>
+
+
+
+        <div>
+
+            <li class="teste-textleft">
+
+                <b>end</b>: Alinha nosso texto a esquerda.
+
+            </li>
+            <hr>
+
+        </div>
+
+        <div>
+
+            <li class="teste-textjustify">
+
+                <b>justify</b>: Deixa todos os cantos do nosso parágrafo quadrados.
+
+            </li>
+
+            <h2><u>Sem justify!</u></h2>
+
+            <p style="text-align: left;"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero
+                    dolor consectetur dolore
+                    sapiente in cum vitae? Quis necessitatibus, ipsa similique enim possimus, dolores facilis quasi
+                    alias ex corporis adipisci.</span><span>At, amet voluptatibus consectetur repudiandae natus fugiat
+                    minima repellendus, libero eum soluta vitae placeat, cum quam corporis. Accusantium fugiat in, ad
+                    debitis omnis laborum mollitia eum repudiandae tenetur nostrum similique.</span><span>Facilis, quod
+                    deleniti maxime voluptatem neque quasi quos ad atque sint est, dolorum ipsum tempora. Aperiam
+                    molestiae, fuga voluptatibus placeat architecto consequatur inventore illum natus, quod obcaecati
+                    odio dicta dignissimos.</span><span>Consequuntur doloribus reiciendis ipsam officia asperiores,
+                    maiores numquam commodi, quia similique cumque sed magnam ad facilis corrupti aperiam repellat?
+                    Laborum, tempora. Perspiciatis velit corrupti aut debitis eius impedit. Vitae, quidem!</span></p>
+
+            <h2><u>Com justify!</u></h2>
+
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, harum ipsum? Quam voluptatem,
+                    facilis, debitis aut in earum consectetur consequatur voluptas ex pariatur atque quia nisi inventore
+                    aliquid incidunt odit.</span><span>Nostrum nisi sapiente reprehenderit doloremque dolorum modi
+                    ducimus exercitationem aperiam animi molestias delectus atque vitae voluptate accusamus at, eos
+                    deleniti et. Odio sapiente nam, eum laborum ratione unde vel illo.</span><span>Beatae enim accusamus
+                    deleniti quos quia maiores amet quas repellendus temporibus cumque, ab harum ipsam neque dicta
+                    cupiditate. Deserunt ipsa placeat vitae ipsam reprehenderit consequuntur hic recusandae culpa quidem
+                    inventore.</span><span>Voluptas rem necessitatibus debitis repellendus a? Quo consectetur
+                    praesentium est illum excepturi non repudiandae quod ut necessitatibus? Voluptate distinctio sit
+                    sint maiores voluptas! Totam dolor cupiditate eos fugit laborum dicta.</span></p>
+
+        </div>
+
+        <div>
+
+            <li class="teste-textleft">
+
+                <b>text-shadow</b>: Cria um sombreado nas palaras selecionadas.
+
+            </li>
+            <hr>
+
+        </div>
+
+    </ol>
+
+    <p>
+
+        Além desses atributos de alinhamento, existe o text-decoration. O text-decoration é muito utilizado com os links
+        das nossas páginas. Quando colocamos um link ele sempre vai ter um sublinhado por padrão, para mudar isso nos
+        usamos o text-decoration, bastar colocarmos um style diretamente na tag e definir que o text-decoration será
+        "none" o "nenhuma". Ficaria da seguinte forma:
+
+        <br><br>
+
+        No código <mark><b>HTML</b></mark> ficaria da seguinte forma:
+
+        <br>
+
+        <img src="img-css/text-decorationnone.jpg" width="50%">
+
+        <br>
+
+        E o resultado seria:
+
+        <br>
+
+        <a style="text-decoration: none;" href="index.html" target="_blank">Voltar para principal</a>
+
+        <br><br>
+
+        Existem outras porpiredades do text-decoration além do none, que seriam:
+
+    <ol>
+
+        <div>
+
+            <li class="overline"><mark>overline:</mark> Coloca uma linha sobre todo meu texto.</li>
+
+        </div>
+
+        <hr><br>
+
+        <div>
+
+            <li style="background-color: #a63e1b;"><mark>line-thtoung</mark>: Ele risca todo nosso texto selecionado,
+                por
+                exemplo: <p class="line-throung">
+                    Gustavo</p>
+
+        </div>
+
+        <hr><br>
+
+        <div>
+
+            <li class="underline"><mark>underline</mark>: Que sublinha todo nosso texto selecionado.</li>
+
+        </div>
+
+        <hr><br>
+
+    </ol>
+
+    <p>
+
+        Outra porpriedade de texto que utilizamos bastante seria a text-transform, essa propriedade é muito utilizada
+        para
+        muitos recursos, como por exemplo, tudo letra maiuscula, tudo letra minuscula ou capitalizar.
+
+    </p>
+
+    <ol>
+
+        <div>
+
+            <li class="uppercase">
+
+                uppercase: Faz com que todas as letrar selecionadas fiquem maiusculas.
+
+            </li>
+
+        </div>
+
+        <hr><br>
+
+        <div>
+
+            <li class="lowercase">
+
+                lowercase: Faz com que todas as letrar selecionadas fiquem minusculas.
+
+            </li>
+
+        </div>
+
+        <hr><br>
+
+        <div>
+
+            <li class="capitalize">
+
+                capitalize: Vai capitalizar todo nosso texto, ou seja, deixar sempre a primeira letra da nossa palavra
+                em maiúsculo.
+
+            </li>
+
+        </div>
+
+        <hr><br>
+
+        <div>
+
+            <li class="indent">
+
+                text-indent: Vai dar uma margem na primeira linha de todos os parágrafos selecionados, por exemplo, uma
+                margem de 90px aplicada nesse parágrafo.
+
+            </li>
+
+        </div>
+
+        <hr><br>
+
+    </ol>
+
+    </p>
+
+    <h2><u>Letter-spacing</u></h2>
+
+    <p>
+
+        O letter-spacing é utilizado quando queremos dar um certo espaçamento entre as letras das palavras contidas do
+        nosso site, podendo ser positivo ou negativo, por exemplo, vamos colocar um espaçamento de 3px em todas as
+        letras do próximo parágrafo:
+
+    </p>
+
+    <p style="letter-spacing: 3px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem
+        cupiditate nemo, earum animi in culpa? Officia laboriosam in officiis blanditiis voluptas repellat
+        reprehenderit, rerum laudantium pariatur ipsam laborum fuga.</p>
+
+    <h2><u>live-height</u></h2>
+
+    <p>O line-height é utilizado para alterarmos o espaçamento entre as linhas do nosso site, e novament, esse
+        espaçamento pode ser positivo ou negativo. Por exemplo, vamos dar um espaçamento de 50px no nosso próximo
+        parágrafo:</p>
+
+    <p style="line-height: 50px;"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error
+            suscipitiste veritatis possimus aspernatur tenetur quasi hic quis eaque, deserunt voluptas officia, mollitia
+            voluptatibus, optio odit illum esse illo.</span><span>Unde vel, asperiores, tenetur odio aliquid delectus
+            magni quos dolores corrupti ducimus deserunt pariatur quibusdam perferendis doloribus quis soluta quod
+            tempora quaerat quam sint voluptatibus necessitatibus harum officiis minus. Dolores!</span></p>
+
+    <h2><u>Conclusão</u></h2>
+
+    <p>
+
+        A propriedade <mark><b>padding</b></mark> é essencial para estilização, pois permite adicionar espaçamento
+        interno aos elementos,
+        proporcionando um design mais organizado e agradável. Como visto, essa propriedade é amplamente utilizada na
+        criação de botões estilizados, permitindo ajustes rápidos e eficientes para melhorar a experiência do usuário.
+
+        <br><br>
+
+        Além do <mark><b>padding</b></mark>, exploramos outras propriedades fundamentais, como <mark><b>width</b></mark>
+        e <mark><b>height</b></mark>, que controlam o tamanho dos
+        elementos e contribuem para a responsividade do layout. O uso do <mark><b>max-width</b></mark> e
+        <mark><b>max-height</b></mark> também se destaca como
+        uma estratégia eficiente para adaptação de elementos em diferentes tamanhos de tela.
+
+        <br><br>
+
+        No que diz respeito à estilização de textos, vimos a importância de propriedades como
+        <mark><b>text-align</b></mark>,
+        <mark><b>text-decoration</b></mark>, <mark><b>text-transform</b></mark>, <mark><b>letter-spacing</b></mark> e
+        <mark><b>line-height</b></mark>. Essas propriedades são essenciais para a
+        personalização da aparência textual, permitindo ajustes na disposição, espaçamento e formato das palavras.
+
+        <br><br>
+
+        Compreender e aplicar corretamente essas propriedades possibilita a criação de páginas mais atrativas e
+        funcionais. À medida que avançamos no estudo do CSS, descobriremos técnicas ainda mais sofisticadas para
+        aprimorar o design e a usabilidade dos nossos projetos.
+
+    </p>
+    <hr>
+
+    <h2><u>Font</u></h2>
+
+    <p>
+
+        A propriedade <mark><b>font</b></mark> no CSS é essencial para definir a aparência do texto em um site. Ela
+        permite configurar, de forma abreviada, várias características da fonte, como estilo (itálico ou normal), peso
+        (negrito ou regular), tamanho e a própria família da fonte. Isso ajuda na legibilidade, na identidade visual da
+        página e na experiência do usuário.
+
+    </p>
+
+    <ol>
+
+        <li>
+
+            font-family: O <mark><b>font-family</b></mark>, ou, familia da fonte, o vscode já apresentará os tipos de
+            fonte cosiderados padrões, que iram rodar em praticamente qualquer navegador. Dessa forma utilizamos as
+            fontes padrões do vscode.
+
+        </li>
+
+        <li>
+
+            font-size: O <mark><b>font-size</b></mark> é utilizado para alterarmos o tamanho da nossa fonte em pixel
+            conforme a necessidade do desenvolvedor.
+
+        </li>
+
+    </ol>
+
+    <p>
+
+        Existe uma forma de adicionarmos fontes externas ao nosso site através do <a href="https://fonts.google.com"
+            target="_blank">Google fonts</a>. Uma curiosidade que muitas pessoas não sabem é que as fontes também
+        possuem direitos autorais, ou seja, você não pode sair pagando qualquer fonte e colocar no seu site que isso
+        provalvemnte vai dar problema para sua página.
+
+        <br><br>
+
+        O <a href="https://fonts.google.com" target="_blank">Google fonts</a> te fornece fontes que são livres de
+        direitos autorais para que nos possamos utiliuzar em nossas páginas sem nenhum tipo de problema.
+
+        <br>
+
+        <a href="https://youtu.be/Ez40S3jaNSU?list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c&t=197" target="_blank">Como
+            adicionar fontes externas ao meu site.</a>
+
+    </p>
+
+    <h2><u>font-style</u></h2>
+
+    <p>
+
+        No font-style podemos expecificar se queremos nossa fonte italica, normal ou oblica.
+
+    </p>
+
+    <h2><u>font-weight</u></h2>
+
+    <p>
+
+        O <mark><b>font-weight</b></mark> serve para determinarmos a grossura da nossa funte, por exemplo, podemos
+        utilizar a propriedade <mark><b>font-weight</b></mark> para deixar a fonte em negrito adicionando o atributo
+        bold. Além disso, podemos selecionar uma grossura pré selecionada que vem junto com a fonte, a maioria das
+        fontes vem com variações de grossura da fonte, sendo o 100= mais fine e 900= mais grossa.
+
+    </p>
+
+    <h2><u>Conclusão</u></h2>
+
+    <p>
+
+        Em resumo, a propriedade <mark><b>font</b></mark> no CSS é uma ferramenta poderosa para personalizar a
+        tipografia de um site, influenciando diretamente na estética e na legibilidade do conteúdo. Com o uso de
+        <mark><b>font-family</b></mark>, <mark><b>font-size</b></mark>, <mark><b>font-style</b></mark> e
+        <mark><b>font-weight</b></mark>, é possível criar textos visualmente atraentes e acessíveis para os usuários.
+        Além disso, a utilização de fontes externas, como as disponíveis no Google Fonts, permite ampliar as
+        possibilidades de design sem preocupações com direitos autorais. Dominar essas configurações é essencial para
+        qualquer desenvolvedor que deseja criar interfaces bem estruturadas e harmoniosas.
+
+    </p>
+    <hr>
+
+    <br><br><br><br>
+
+    <p>
+
+        <a class="botao" href="index.html" target="_blank">Voltar para a principal</a>
+
+    </p>
+
+    <br><br><br>
+    <hr>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 - Todos os direitos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
